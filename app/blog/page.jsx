@@ -17,7 +17,7 @@ async function getData(){
     <h1>Blog page</h1>
     <ul>
       {posts.map(post=>(
-        <li><Link href={`/blog/${post.id}`}>{post.title}</Link></li>
+        <li><Link key={post.id} href={`/blog/${post.id}`}>{post.title}</Link></li>
       ))}
     </ul>
     </>
